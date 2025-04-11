@@ -28,7 +28,9 @@ WITH skills_demand AS (
             job_location LIKE '%Belgium%'
         )
     GROUP BY skills_dim.skill_id
-), average_salary AS (
+), 
+
+average_salary AS (
     SELECT 
         skills_dim.skill_id,
         skills,
@@ -60,7 +62,7 @@ WHERE demand_count > 10
 ORDER BY
     demand_count DESC,
     avg_salary DESC
-LIMIT 25;
+LIMIT 6;
 
 -- Insight:
 -- This query highlights skills that strike a strong balance between demand and compensation.

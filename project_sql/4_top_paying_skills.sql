@@ -32,6 +32,7 @@ ORDER BY
     avg_salary DESC
 LIMIT 25;
 
+
 -- Insight:
 -- This query shows which skills are most frequently associated with higher average salaries 
 -- in Data Analyst roles across remote, Dutch, and Belgian listings.
